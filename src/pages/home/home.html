@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{ort}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-toolbar color="primary">
+  Hunger: 3
+</ion-toolbar>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row class="options">
+      <ion-col *ngFor="let option of options" col-6 padding>
+        {{option}}
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-card *ngFor="let content of feed" color="primary" padding>
+        {{content}}
+      </ion-card>
+    </ion-row>
+       
+  </ion-grid>
+</ion-content>
+
+
