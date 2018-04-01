@@ -21,44 +21,37 @@ export class CharakterErstellungPage {
 
   }
 
-showPrompt() {
+waehlen(Typ) {
     let prompt = this.alertCtrl.create({
       title: 'Wie Heißt du?',
-      message: "gib hier deinen Namen ein",
+      message: "Gib hier deinen Namen ein",
       inputs: [
         {
-          name: 'title',
+          name: 'Name',
           placeholder: 'Name'
         },
       ],
       buttons: [
         {
-          text: 'abbrechen',
+          text: 'Abbrechen',
           handler: data => {
             console.log('Cancel clicked');
           }
         },
         {
-          text: 'weiter',
+          text: 'Weiter',
           handler: data => {
             console.log('Saved clicked');
+            this.navCtrl.push(HomePage, {
+              Typ: Typ,
+              Name: data.Name
+            });
           }
         }
       ]
     });
     prompt.present();
-
-
   }
-
-
-waehlen(Typ){
-this.showPrompt();
-this.navCtrl.push(HomePage, {
-      Typ: Typ
-    });
-}
-
 }
 
 

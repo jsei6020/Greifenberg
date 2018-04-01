@@ -30,7 +30,8 @@ export class HomePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {	
 		this.typ = this.navParams.data.Typ;
-		this.name = "Hans Zimmer";
+		this.name = this.navParams.data.Name;
+		console.log(this.name);
 		this.ort = "Stadttor";
 		this.zustand = 1;
 		this.setE();
@@ -67,7 +68,8 @@ export class HomePage {
 		}
 		else if(this.zustand + "" + color == "20") {
 			this.feed.unshift({content: "Guten Tag, und Sie sind?", color: "primary"});
-  		this.options = this.e[1][this.typ];
+			this.options = this.e[1][this.typ];
+			this.zustand = 3;
 		}
 		if(this.zustand + "" + color == "21") {
 			this.feed.unshift({content: `Du schreitest unter durch das riesige, zweigflüglete Tor und betrittst die Straßen Greifenbergs.
