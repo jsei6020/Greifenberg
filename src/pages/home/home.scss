@@ -1,5 +1,30 @@
+@import "../../theme/variables.scss";
+
 page-home {
 	.options {
-		height: 50%;
+		padding: 0px;
+	}
+	.no-scroll .scroll-content{
+		overflow: hidden;
+	  }
+	.option0 {
+		background-color: $option0;
+		text-align: center;
+		color: white;
+	}
+	.option1 {
+		background-color: $option1;
+		text-align: center;
+		color: white;
+	}
+	.option2 {
+		background-color: $option2;
+		text-align: center;
+		color: white;
+	}
+	.option3 {
+		background-color: $option3;
+		text-align: center;
+		color: white;
 	}
 }

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 @Component({
-  selector: 'page-list',
+  selector: 'page-rucksack',
   templateUrl: 'list.html'
 })
 export class ListPage {

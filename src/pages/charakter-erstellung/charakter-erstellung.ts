@@ -52,10 +52,14 @@ showPrompt() {
 
   }
 
+<<<<<<< HEAD
 waehlen(Typ){
 this.showPrompt();
+=======
+waehlen(typ) {
+>>>>>>> 48dd804a76081eed35299c9dcbf3714db8e60ab6
 this.navCtrl.push(HomePage, {
-      Typ: Typ
+      Typ: typ
     });
 }
 
