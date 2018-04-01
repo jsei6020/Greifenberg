@@ -16,10 +16,9 @@ import { AlertController } from 'ionic-angular';
 })
 export class CharakterErstellungPage {
 
-  hello;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
-    this.hello = "Hello";
+
   }
 
 showPrompt() {
@@ -56,7 +55,7 @@ showPrompt() {
 waehlen(Typ){
 this.showPrompt();
 this.navCtrl.push(HomePage, {
-      Typ: typ
+      Typ: Typ
     });
 }
 
