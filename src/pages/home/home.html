@@ -1,31 +1,29 @@
 <ion-header>
-  <ion-navbar color="primary">
+  <ion-toolbar color="primary">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>{{ort}}</ion-title>
-  </ion-navbar>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content no-scroll>
-    <ion-toolbar color="primary">
+<ion-content class="no-scroll">
+    <!--<ion-toolbar color="primary">
         Hunger: 3
-      </ion-toolbar>
+      </ion-toolbar>-->
   <ion-grid class="options">
     <ion-row>
-      <ion-col *ngFor="let option of options; let i = index" (click)="continue(option)" [ngClass]="'option' + i" col-6 padding>
+      <ion-col *ngFor="let option of options; let i = index" (click)="continue(option, 'option' + i)" [ngClass]="'option' + i" col-6 padding>
         {{option}}
       </ion-col>
     </ion-row>
     <ion-row>
-        
-          <ion-card *ngFor="let content of feed" color="primary" padding>
-            {{content}}
-          </ion-card>
-        
+      <ion-card *ngFor="let content of feed" [color]="content.color" padding>
+          {{content.content}}
+      </ion-card>         
     </ion-row>
-       
   </ion-grid>
+  {{typ}}
 </ion-content>
 
 

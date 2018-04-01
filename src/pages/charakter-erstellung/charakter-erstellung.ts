@@ -27,9 +27,9 @@ export class CharakterErstellungPage {
 
   }
 
-waehlen(Typ) {
+waehlen(typ) {
 this.navCtrl.push(HomePage, {
-      Typ: Typ
+      Typ: typ
     });
 }
 

@@ -4,6 +4,9 @@ page-home {
 	.options {
 		padding: 0px;
 	}
+	.no-scroll .scroll-content{
+		overflow: hidden;
+	  }
 	.option0 {
 		background-color: $option0;
 		text-align: center;
