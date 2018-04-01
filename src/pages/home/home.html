@@ -7,21 +7,22 @@
   </ion-navbar>
 </ion-header>
 
-<ion-toolbar color="primary">
-  Hunger: 3
-</ion-toolbar>
-
-<ion-content padding>
-  <ion-grid>
-    <ion-row class="options">
-      <ion-col *ngFor="let option of options" col-6 padding>
+<ion-content no-scroll>
+    <ion-toolbar color="primary">
+        Hunger: 3
+      </ion-toolbar>
+  <ion-grid class="options">
+    <ion-row>
+      <ion-col *ngFor="let option of options; let i = index" (click)="continue(option)" [ngClass]="'option' + i" col-6 padding>
         {{option}}
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-card *ngFor="let content of feed" color="primary" padding>
-        {{content}}
-      </ion-card>
+        
+          <ion-card *ngFor="let content of feed" color="primary" padding>
+            {{content}}
+          </ion-card>
+        
     </ion-row>
        
   </ion-grid>
