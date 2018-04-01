@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { CharakterErstellungPage } from '../pages/charakter-erstellung/charakter-erstellung';
+import { CNamePage } from '../pages/c-name/c-name';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -15,8 +16,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     ListPage,
-    CharakterErstellungPage
-  ],
+    CharakterErstellungPage,
+    CNamePage  ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
@@ -26,7 +27,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     ListPage,
-    CharakterErstellungPage
+    CharakterErstellungPage,
+    CNamePage,
 
   ],
   providers: [

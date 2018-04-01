@@ -16,6 +16,6 @@ export class HomePage {
   	this.ort = "Stadttor";
   	this.feed = ["Du stehst vor einem großen Stadttor.", "Jemand kommt auf dich zu."];
   	this.options = ["Hallo sagen", "Weiter gehen", "Anrempeln", "Umarmung probieren"];
-  }
 
+  }
 }
