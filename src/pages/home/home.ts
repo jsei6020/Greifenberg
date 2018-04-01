@@ -11,6 +11,7 @@ export class HomePage {
 	public feed: Array<string>;
 	public options: Array<string>;
 
+
   constructor(public navCtrl: NavController) {
   	this.ort = "Stadttor";
   	this.feed = ["Du stehst vor einem großen Stadttor.", "Jemand kommt auf dich zu."];
