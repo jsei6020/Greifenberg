@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>{{ort}}</ion-title>
+    <ion-title>{{typ}} - {{ort}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -13,7 +13,7 @@
       </ion-toolbar>-->
   <ion-grid class="options">
     <ion-row>
-      <ion-col *ngFor="let option of options; let i = index" (click)="continue(option, 'option' + i)" [ngClass]="'option' + i" col-6 padding>
+      <ion-col *ngFor="let option of options; let i = index" (click)="continue(option, i)" [ngClass]="'option' + i" col-6 padding>
         {{option}}
       </ion-col>
     </ion-row>
@@ -23,7 +23,7 @@
       </ion-card>         
     </ion-row>
   </ion-grid>
-  {{typ}}
+  
 </ion-content>
 
 
