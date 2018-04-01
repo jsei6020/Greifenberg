@@ -15,8 +15,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     ListPage,
-    CharakterErstellungPage
-  ],
+    CharakterErstellungPage,
+    ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
@@ -26,7 +26,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     ListPage,
-    CharakterErstellungPage
+    CharakterErstellungPage,
 
   ],
   providers: [

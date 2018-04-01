@@ -28,8 +28,7 @@ export class HomePage {
 	public e: Array<entscheidung> = [];
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-		
+  constructor(public navCtrl: NavController, public navParams: NavParams) {	
 		this.typ = this.navParams.data.Typ;
 		this.name = "Hans Zimmer";
 		this.ort = "Stadttor";
@@ -54,6 +53,7 @@ export class HomePage {
 			Dadurch erhoffst Du dir die Koordinaten des Verstecks seines Schatzes zu erfahren.`, color: "primary"});
 		}
 		this.options = ["Weiter", "-", "-", "-"];
+  	this.ort = "Stadttor";
 	}
 	
 	continue(content: string, color: string) {
@@ -86,5 +86,5 @@ export class HomePage {
 		["Mein Name ist " + this.name + "!", "Das geht Sie gar nichts an.", "Mit wem habe ich denn die Ehre?", "-"]);
 		this.e.push(e);
 	}
-
 }
+
